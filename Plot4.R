@@ -55,6 +55,7 @@ if (file.exists(data.zip)){
          xlab="datetime", ylab="Global_reactive_power")
     
     # Close the graphics device:
+    dev.copy(png,"plot4.png", width=480, height=480)
     dev.off()
     
   }, error=function(e){
