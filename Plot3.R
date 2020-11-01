@@ -41,7 +41,6 @@ if (file.exists(data.zip)){
            col=c('black','red','blue'), lwd=1)
     
     # Close the graphics device:
-    dev.copy(png,"plot3.png", width=480, height=480)
     dev.off()
     
   }, error=function(e){

@@ -37,7 +37,7 @@ if (file.exists(data.zip)){
     
     # Plot the upper right-hand plot, Voltage vs. Time (line graph)
     plot(trimmed.data$datetime, trimmed.data$Voltage, type="l",
-         xlab="", ylab="Voltage")
+         xlab="datetime", ylab="Voltage")
     
     # Plot the lower left-hand plot, Energy Sub Volt by Sub Metering vs. Time:
     plot(trimmed.data$datetime, trimmed.data$Sub_metering_1, type="l",
@@ -55,7 +55,6 @@ if (file.exists(data.zip)){
          xlab="datetime", ylab="Global_reactive_power")
     
     # Close the graphics device:
-    dev.copy(png,"plot4.png", width=480, height=480)
     dev.off()
     
   }, error=function(e){
