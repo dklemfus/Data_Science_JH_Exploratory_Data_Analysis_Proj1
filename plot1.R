@@ -35,7 +35,6 @@ if (file.exists(data.zip)){
          main="Global Active Power", xlab="Global Active Power (kilowatts)")
     
     # Close the graphics device:
-    dev.copy(png,"plot1.png", width=480, height=480)
     dev.off()
     
   }, error=function(e){
